@@ -314,6 +314,17 @@ function createContinuousButterflies(container, count = 15) {
     return butterflyContainer;
 }
 
+function onResize() {
+    const canvas = document.getElementById('pinkboard');
+    if (canvas) {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+}
+
+window.addEventListener('resize', onResize);
+onResize();
+
 document.addEventListener("DOMContentLoaded", function() {
     const audio = document.getElementById("background-music");
     const playButton = document.getElementById("play-music");

@@ -253,3 +253,52 @@ body, html {
     pointer-events: none;
     z-index: 1;
 }
+
+@media screen and (max-width: 768px) {
+    .neon-text {
+        font-size: 36px;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .frames-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .frame {
+        width: 150px;
+        height: 150px;
+    }
+
+    .letter-box {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .letter-text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .neon-text {
+        font-size: 28px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .frames-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .frame {
+        width: 120px;
+        height: 120px;
+    }
+}
