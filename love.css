@@ -265,12 +265,19 @@ body, html {
     }
 
     .frames-container {
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        max-width: 600px;
     }
 
     .frame {
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 /1 ;
     }
 
     .letter-box {
